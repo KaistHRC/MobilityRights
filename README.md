@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Before Start...
-1. Install VS code as code editor\
-1. Download and install Node.js from https://nodejs.org/ko/ (LTS Ver.)\
+1. Install **VS code** as code editor
+1. Download and install **Node.js** from https://nodejs.org/ko/ (LTS Ver.)
 1. Clone this repository locally
 
 ## Available Scripts
