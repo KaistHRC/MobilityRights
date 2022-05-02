@@ -1,0 +1,45 @@
+.infoContent__1{
+    padding: 32px 0px;
+}
+
+.infoContent__1-emoji{
+    font-size: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 16px 40px;
+}
+
+.infoContent__1-text{
+    font-size: 3rem;
+    color: white;
+}
+
+.infoContent__2-text{
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+}
+
+.infoContent__3 {
+    padding: 8px 48px;
+}
+
+.infoContent__3-text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.1rem;
+    text-align: left;
+    margin: 20px 0px;
+    align-items: center;
+
+    line-height: 2.8rem;
+    font-weight: 500;
+}
+
+.infoContent__4-text{
+
+    margin: auto;
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+}
