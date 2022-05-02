@@ -12,3 +12,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

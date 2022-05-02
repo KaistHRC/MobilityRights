@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState, Fragment } from "react";
 import gapi from "gapi-client";
+import Main from './pages/Main';
 
 function App() {
   const [data, setData] = useState([]);
@@ -19,17 +20,8 @@ function App() {
 
   return (
     <>
-    <h1>data from google sheets</h1>
-    <ul>
-      {/* {data.map((item, i) => (
-        <Fragment key={i}>
-          <li>건물 번호 -- {item["건물 번호"]}</li>
-          <li>건물 주변 도로 경사 - {item["건물 주변 도로 경사"]}</li>
-          <br />
-        </Fragment>
-      ))} */}
-    </ul>
-  </>
+      <Main></Main>
+    </>
   );
   
 }

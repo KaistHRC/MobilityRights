@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --maincolor : #FFAD4C;
+    font-size:10px; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+body {
+    margin: 0;
+    font-family: Pretendard, -apple-system, 
+    BlinkMacSystemFont, system-ui, Roboto, 
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 
+    'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+
+    background-color: black;
+    text-align: center;
+    cursor:'pointer';
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  
+  .ui-container {
+    max-width: 428px;
+    background-color: var(--maincolor);
+    position: fixed;
+    height: 100%;
+    
+    width: 100%;
+    left: 50%;
+    transform: translateX( -50% );
+  }
