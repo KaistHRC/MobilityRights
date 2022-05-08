@@ -1,0 +1,18 @@
+.buildingPage__name {
+    padding-top: 40px;
+}
+
+.buildingPage__name-num {
+    font-size: 5.0rem;
+    text-transform: uppercase;
+    color: var(--maincolor);
+    background-color: white;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+.buildingPage__name-acc {
+    margin-top: 20px;
+    font-size: 3.0rem;
+    color: white;
+}

@@ -36,6 +36,10 @@
     font-weight: 500;
 }
 
+.infoContent__4 {
+    padding-bottom: 40px;
+}
+
 .infoContent__4-text{
 
     margin: auto;
@@ -43,3 +47,4 @@
     font-size: 3rem;
     font-weight: 900;
 }
+

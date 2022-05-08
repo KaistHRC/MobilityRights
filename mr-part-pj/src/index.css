@@ -1,6 +1,10 @@
+html {
+  display: block;
+}
+
 :root{
-    --maincolor : #FFAD4C;
-    font-size:10px; 
+    --maincolor : #ffa435;
+    font-size:10px;
 }
 
 body {
@@ -14,11 +18,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-overflow-scrolling: touch;
 
-    background-color: black;
+    background-color: #ffca89;
     text-align: center;
     cursor:'pointer';
     min-height: 100vh;
     min-height: -webkit-fill-available;
+
   }
   @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
   
@@ -31,10 +36,29 @@ body {
   .ui-container {
     max-width: 428px;
     background-color: var(--maincolor);
-    position: fixed;
-    height: 100%;
+    /* position: fixed; */
+    /* height: 100%; */
+    /* overflow: scroll; */
     
     width: 100%;
     left: 50%;
-    transform: translateX( -50% );
+    /* transform: translateX( -50% ); */
   }
+
+
+button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.ui-container{
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 75px;
+}
