@@ -1,0 +1,43 @@
+.bdExp__text {
+    font-size: 2.6rem;
+    text-align: left;
+    font-weight: 700;
+    color: white;
+    padding: 10px 20px 20px 20px;
+}
+
+.bdExp__true {
+    text-align: start;
+    padding-left: 30px;
+}
+.bdExp__true-blocks {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.bdExp__true-blocks-text{
+    font-size: 2.7rem;
+    background-color: white;
+    padding: 10px;
+}
+
+.bdExp__false {
+    padding-right: 30px;
+}
+
+.bdExp__false-blocks {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 22px;
+}
+
+.bdExp__false-blocks-emoji {
+    font-size: 3.0rem;
+    transform: translateX(30%) translateY(-30%);
+}
+
+.bdExp__false-blocks-text {
+    font-size: 2.7rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}

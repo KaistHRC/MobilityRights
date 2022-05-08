@@ -16,3 +16,9 @@
     font-size: 3.0rem;
     color: white;
 }
+
+.buildingPage__reason-toggle {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 400;
+}
