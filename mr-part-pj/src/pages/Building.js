@@ -4,6 +4,10 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import BdExp from "../components/BdExp";
 import BdRating from "../components/BdRating";
+
+import db from '../db/checklist.csv'
+
+
 import "../building.css";
 import { useParams } from "react-router-dom";
 
@@ -13,6 +17,8 @@ function Building() {
     const params = useParams()
     const buildingId = params.buildingId
     const [expOn, setExpOn] = useState(false);
+    // const { CSVReader } = useCSVReader();
+    const buildingInfo = null;
 
     useEffect(() => {
         if (expOn) {
@@ -36,12 +42,12 @@ function Building() {
                         지금 이 건물의 <br/><b>이동약자 접근성</b>
                     </div>
                 </div>
-                <BdRating bdId={buildingId} />
+                <BdRating bdInfo={buildingInfo} />
                 <div className="buildingPage__reason">
                     <button className="buildingPage__reason-toggle" onClick={scrollExp}> 
                         <b>왜?</b> 이유보기 <IoChevronForward size={"2.2rem"}/> 
                     </button>
-                    {expOn ? <BdExp bdId={buildingId} /> : null}
+                    {expOn ? <BdExp bdInfo={buildingInfo} /> : null}
                 </div>
             </div>
             <Footer />

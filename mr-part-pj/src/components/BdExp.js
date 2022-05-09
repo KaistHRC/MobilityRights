@@ -5,6 +5,9 @@ import "../bd-exp.css";
 
 function BdExp(props) {
     // backend using props.bdId
+    // <Emoji className="bdExp__false-blocks-emoji" symbol="🚽"/>
+    // <Emoji className="bdExp__false-blocks-emoji" symbol="🚪"/>
+    // <Emoji className="bdExp__false-blocks-emoji" symbol="🛗"/>
     return(
         <div className="bdExp__">
             <div className="bdExp__text">
