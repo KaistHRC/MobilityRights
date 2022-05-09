@@ -3,6 +3,7 @@
 }
 
 .bdRating__text {
+    padding-top: 16px;
     font-size: 3.0rem;
-    font-weight: bold;
+    font-weight: 400;
 }

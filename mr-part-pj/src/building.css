@@ -3,7 +3,7 @@
 }
 
 .buildingPage__name-num {
-    font-size: 5.0rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
     color: var(--maincolor);
     background-color: white;
@@ -11,10 +11,17 @@
     padding: 0px 10px;
 }
 
+/* .buildingPage__name-bdname {
+    padding-top: 10px;
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: white;
+} */
 .buildingPage__name-acc {
     margin-top: 20px;
     font-size: 3.0rem;
     color: white;
+    line-height: 125%;
 }
 
 .buildingPage__reason-toggle {

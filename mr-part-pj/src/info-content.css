@@ -48,3 +48,13 @@
     font-weight: 900;
 }
 
+
+.formButton__ {
+    background-color: black;
+    border-radius: 3px;
+    display: block;
+    font-size: 3.0rem;
+    color: white;
+    margin: 0px 32px;
+    padding: 20px 0px;
+}

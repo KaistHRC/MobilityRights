@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "a11y-react-emoji": "^1.2.0",
     "gapi-client": "^0.0.3",
+    "google-charts": "^2.0.0",
     "google-spreadsheet": "^3.2.0",
     "googleapis": "^39.2.0",
     "react": "^18.0.0",
