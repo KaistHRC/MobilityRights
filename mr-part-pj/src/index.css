@@ -4,7 +4,7 @@ html {
 
 :root{
     --maincolor : #ffa435;
-    font-size:10px;
+    font-size: 10px;
 }
 
 body {
@@ -18,11 +18,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-overflow-scrolling: touch;
 
-    background-color: #ffca89;
+    /* background-color: #ffca89; */
+    background-color: var(--maincolor);
     text-align: center;
     cursor:'pointer';
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    /* min-height: -webkit-fill-available; */
 
   }
   @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
