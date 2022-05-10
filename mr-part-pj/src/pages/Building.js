@@ -50,6 +50,8 @@ function Building() {
     }
 
     return(
+        /// Accessibility for this building, ???
+        /// Find out WHY
         <div className="ui-container">
             <NavBar />
             <div className="buildingPage__">

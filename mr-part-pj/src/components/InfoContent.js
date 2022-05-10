@@ -4,6 +4,12 @@ import "../info-content.css"
 
 function InfoContent() {
     return (
+        /// We Want KAIST to Be Accessible to EVERYONE
+        /// Accessible buildings are also easier to use
+        /// If you ever felt too tired climbing up the stairs
+        /// If you ever had to go around the building with a bike to find a ramp
+        /// If you ever had a hard time going to the classroom with crutches
+        /// Help us make KAIST more ACCESSIBLE!
         <div className='infoContent__'>
             <div className='infoContent__1'>
                 <div className='infoContent__1-emoji'>
