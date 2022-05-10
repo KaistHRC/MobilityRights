@@ -10,7 +10,7 @@ import infoPic from "../img/info.png";
 
 function BdRating(props) {
     // 여러 backend things using props.bdId
-    const appRateText = ["최악", "나쁨", "보통", "좋음", "최고"]
+    const appRateText = ["최악", "나쁨", "보통", "좋음", "최고"] //['worst', 'bad', ...]
     const info = props.bdInfo
     const keys = ["road", "road_braille", "auto_door", "slope", "elevator", "braille_blocks", "info_braille", "toilet"]
     const [rate, setRate] = useState(2);
@@ -32,7 +32,7 @@ function BdRating(props) {
         <div className="bdRating__">
             {info != undefined ? info.is_info ? <img src={rateImg[rate]} /> : <img src={infoPic} />  : null}
             <div className="bdRating__text">
-                {info != undefined ? info.is_info ? <b> {appRateText[rate]} </b> : "아직 정보가 없습니다." : null}
+                {info != undefined ? info.is_info ? <b> {appRateText[rate]} </b> : "아직 정보가 없습니다." /*"No information"*/: null} 
             </div>
         </div>
     )

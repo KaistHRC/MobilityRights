@@ -5,11 +5,17 @@ import "../nav-bar.css";
 import logo from "../img/logo.svg";
 
 function NavBar() {
-
+    function translate() {
+        console.log("translate plz")
+        //local storage blahblah
+    }
     return(
         <div className="navBar__">
             <div className="navBar__logo"><img src={logo}></img></div>
-            <Link to="/" className="navBar__info">Info</Link>
+            <div className="navBar__info">
+                <button onClick={translate}><span className="navBar__info">Eng</span></button>
+                <Link to="/">Info</Link>
+            </div>
         </div>
     )
 }
