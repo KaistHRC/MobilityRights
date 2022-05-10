@@ -8,8 +8,9 @@ function BdExp(props) {
     const info = props.bdInfo
     const keys = ["road", "road_braille", "auto_door", "slope", "elevator", "braille_blocks", "info_braille", "toilet"]
     const lisTexts = ["도로 주변 경사", "건물 주변 점자블록", "자동문", "경사로", "엘리베이터", "건물 내 점자블록", "점자 안내", "장애인 화장실"]
+    // ["Pavement ramps around the building", "Tactile pavements around the building", "Automatic doors", "Wheelchair ramps", "Elevators", "Tactile pavements in the building", "Braille Maps", "Wheelchair accessable bathrooms"]
     const lisSymbols = ["🛣", "🔎", "🚪", "↗️", "🛗", "🏢", "🧭", "🚽"]
-
+  
     const [arrTrue, setArrTrue] = useState([]);
     const [arrFalse, setArrFalse] = useState([]);
 
@@ -38,10 +39,15 @@ function BdExp(props) {
         console.log(arrTrue)
     }, [info])
 
-    return(
+    return( 
+        // This building has...
+        // But doesn't have...
+        // which makes it difficult for some people to access the building.
+        // OR
+        // which are needed for accessibility.
         <div className="bdExp__">
             <div className="bdExp__text">
-                이 건물에는
+                이 건물에는 
             </div>
             <div className="bdExp__true">
                 {arrTrue.map((el, ind) => 
