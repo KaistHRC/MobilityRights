@@ -7,8 +7,8 @@ function BdExp(props) {
     // backend using props.bdId
     const info = props.bdInfo
     const keys = ["road", "road_braille", "auto_door", "slope", "elevator", "braille_blocks", "info_braille", "toilet"]
-    const lisTexts = ["도로 주변 경사", "건물 주변 점자블록", "자동문", "경사로", "엘리베이터", "건물 내 점자블록", "점자 안내", "장애인 화장실"]
-    /// ["Pavement ramps around the building", "Tactile pavements around the building", "Automatic doors", "Wheelchair ramps", "Elevators", "Tactile pavements in the building", "Braille Maps", "Wheelchair accessable bathrooms"]
+    const lisTexts = ["건물 주변 보도 경사", "건물 주변 점자블록", "자동문", "경사로", "엘리베이터", "건물 내 점자블록", "점자 안내", "장애인 화장실"]
+    /// ["Pavement ramps around the building", "Tactile pavements around the building", "Automatic doors", "Wheelchair ramps", "Elevators", "Tactile pavements in the building", "Braille Maps", "Wheelchair accessible bathrooms"]
     const lisSymbols = ["🛣", "🔎", "🚪", "↗️", "🛗", "🏢", "🧭", "🚽"]
   
     const [arrTrue, setArrTrue] = useState([]);
