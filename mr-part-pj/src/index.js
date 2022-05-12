@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Main, Building } from './pages'
+import { Main, Building, BdList } from './pages'
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -11,6 +11,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/building-list" element={<BdList />} />
         {/* <Route path="/:buildingId" element={<Main />}/> */}
         <Route path="/:buildingId" element={<Building />}/>
         <Route

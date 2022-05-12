@@ -11,10 +11,10 @@ function NavBar() {
     }
     return(
         <div className="navBar__">
-            <div className="navBar__logo"><img src={logo}></img></div>
+            <div className="navBar__logo"><Link to="/"><img src={logo}></img></Link></div>
             <div className="navBar__info">
                 <button onClick={translate}><span className="navBar__info">Eng</span></button>
-                <Link to="/">Info</Link>
+                
             </div>
         </div>
     )
