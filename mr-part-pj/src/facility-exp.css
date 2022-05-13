@@ -1,0 +1,33 @@
+.facilityExp__name {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+.facilityExp__name-exp {
+    padding: 0px 16px 0px 32px;
+    text-align: left;
+    font-size: 1.6rem;
+    display: block;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+.facilityExp__container {
+    display: flex;
+    padding-left: 32px;
+    font-size: 1.8rem;
+    margin: 20px 0px 40px 0px;
+}
+
+.facilityExp__container-inner {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.facilityExp__container-img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}

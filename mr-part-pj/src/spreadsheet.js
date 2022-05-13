@@ -15,14 +15,16 @@ const useGoogle = () => {
     const SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly';
 
     useEffect(() => {
+      if (localStorage.getItem("db") === null) {
         const handleClientLoad = () => window.gapi.load('client:auth2', initClient)
+
         function makeApiCall() {
             var params = {
               // The ID of the spreadsheet to retrieve data from.
               spreadsheetId: '12hBnR4G-ACW9QnUVjveiYPbZcN0OnZdnf2-wlKuvAnw',  // TODO: Update placeholder value.
       
               // The A1 notation of the values to retrieve.
-              range: "'Sheet 3'!A1:K98",  // TODO: Update placeholder value.
+              range: "'Sheet 3'!A1:K98", 
       
             //   valueRenderOption: '',  // TODO: Update placeholder value.
       
@@ -34,6 +36,7 @@ const useGoogle = () => {
               // TODO: Change code below to process the `response` object:
               const jsonDB = parseIntoJson(response.result.values);
               setRes(jsonDB);
+              localStorage.setItem('db', JSON.stringify(jsonDB))
             }, function(reason) {
               console.error('error: ' + reason.result.error.message);
             });
@@ -84,7 +87,9 @@ const useGoogle = () => {
         return () => {
             document.body.removeChild(script);
         };
-
+      } else {
+        setRes(JSON.parse(localStorage.getItem('db')))
+      }
     }, []);
     return res;
 };

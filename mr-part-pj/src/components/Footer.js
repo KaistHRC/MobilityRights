@@ -11,7 +11,8 @@ function Footer() {
             <a className="Footer__icon" href="https://www.facebook.com/kaisthumanrightscommittee"><AiFillFacebook /></a>
             <a className="Footer__icon" href="https://www.instagram.com/kaist_hrc/"><AiFillInstagram /></a>
             <a className="Footer__icon" href="mailto:kaisthrc@gmail.com"><IoMailSharp /></a>
-            <div> ⓒ 2022. KAIST HRC all rights reserved.</div>
+            <div> ⓒ <b>2022. KAIST HRC</b> all rights reserved.</div>
+            <div>Contact us if there are any corrections.</div>
         </footer>
     )
 }

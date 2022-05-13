@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Emoji from 'a11y-react-emoji'
+import { Link } from "react-router-dom";
+import { IoChevronForward } from "react-icons/io5"
 
 import "../bd-exp.css";
 
@@ -35,8 +37,6 @@ function BdExp(props) {
             setArrTrue(arr0)
             setArrFalse(arr1)
         }
-
-        console.log(arrTrue)
     }, [info])
 
     return( 
@@ -51,24 +51,24 @@ function BdExp(props) {
             </div>
             <div className="bdExp__true">
                 {arrTrue.map((el, ind) => 
-                <div className="bdExp__true-blocks" key={ind}>
-                    <div className="bdExp__true-blocks-text">{el.text}</div>
-                </div>)}
+                    <Link to="/facility-terminology" className="bdExp__true-blocks" key={ind}>
+                        <div className="bdExp__true-blocks-text">{el.text}</div>
+                    </Link>)}
             </div>
             <div className="bdExp__text">
                 설치되어 있지만...
             </div>
             <div className="bdExp__false">
                 {arrFalse.map((el, ind) => 
-                <div className="bdExp__false-blocks" key={ind}>
-                    <Emoji className="bdExp__false-blocks-emoji" symbol={el.symbol}/>
-                    <div className="bdExp__false-blocks-text">{el.text}</div>
-                </div>)}
+                    <Link to="/facility-terminology" className="bdExp__false-blocks" key={ind}>
+                        <Emoji className="bdExp__false-blocks-emoji" symbol={el.symbol}/>
+                        <div className="bdExp__false-blocks-text">{el.text}</div>
+                    </Link>)}
             </div>
             <div className="bdExp__text">
-                {arrTrue.length < 5 ? "없어서 이동약자들의 이용이 어렵습니다." : "이동권을 위해서 꼭 필요합니다."}
+                {arrTrue.length < 5 ? "없어서 이동약자들의 이용이 어렵습니다." : "모두의 캠퍼스를 위해서 꼭 필요합니다."}
             </div>
-            
+            <Link className="bdExp__term" to="/facility-terminology"><span>편의시설 용어 설명</span><IoChevronForward size={"2.4rem"}/> </Link>
         </div>
     )
 }
