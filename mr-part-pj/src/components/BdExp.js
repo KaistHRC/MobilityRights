@@ -3,19 +3,30 @@ import Emoji from 'a11y-react-emoji'
 import { Link } from "react-router-dom";
 import { IoChevronForward } from "react-icons/io5"
 
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
+
+
 import "../bd-exp.css";
 
 function BdExp(props) {
-    // backend using props.bdId
+    const { t }  = useTranslation(['buildingExp'])
     const info = props.bdInfo
     const keys = ["road", "road_braille", "auto_door", "slope", "elevator", "braille_blocks", "info_braille", "toilet"]
-    const lisTexts = ["건물 주변 보도 경사", "건물 주변 점자블록", "자동문", "경사로", "엘리베이터", "건물 내 점자블록", "점자 안내", "장애인 화장실"]
+
+    const lisTexts = keys.map(el => t('buildingExp:' + el))
+
+    /// ["건물 주변 보도 경사", "건물 주변 점자블록", "자동문", "경사로", "엘리베이터", "건물 내 점자블록", "점자 안내", "장애인 화장실"]
     /// ["Pavement ramps around the building", "Tactile pavements around the building", "Automatic doors", "Wheelchair ramps", "Elevators", "Tactile pavements in the building", "Braille Maps", "Wheelchair accessible bathrooms"]
     const lisSymbols = ["🛣", "🔎", "🚪", "↗️", "🛗", "🏢", "🧭", "🚽"]
   
     const [arrTrue, setArrTrue] = useState([]);
     const [arrFalse, setArrFalse] = useState([]);
-
+    const styleText = {
+        fontSize: i18n.language === 'en' ? "2.2rem" : "2.7rem",
+        padding: "10px",
+        maxWidth: "260px",
+    }
     useEffect(() => {
         if (info != undefined && info.is_info) {
             var arr0 = [];
@@ -37,7 +48,7 @@ function BdExp(props) {
             setArrTrue(arr0)
             setArrFalse(arr1)
         }
-    }, [info])
+    }, [info, t('buildingExp:road')])
 
     return( 
         /// This building has...
@@ -51,19 +62,19 @@ function BdExp(props) {
             </div>
             <div className="bdExp__true">
                 {arrTrue.map((el, ind) => 
-                    <Link to="/facility-terminology" className="bdExp__true-blocks" key={ind}>
-                        <div className="bdExp__true-blocks-text">{el.text}</div>
-                    </Link>)}
+                    <div className="bdExp__true-blocks" key={ind}>
+                        <Link to="/facility-terminology" className="bdExp__true-blocks-text" style={styleText}>{el.text}</Link>
+                    </div>)}
             </div>
             <div className="bdExp__text">
                 설치되어 있지만...
             </div>
             <div className="bdExp__false">
                 {arrFalse.map((el, ind) => 
-                    <Link to="/facility-terminology" className="bdExp__false-blocks" key={ind}>
+                    <div className="bdExp__false-blocks" key={ind}>
                         <Emoji className="bdExp__false-blocks-emoji" symbol={el.symbol}/>
-                        <div className="bdExp__false-blocks-text">{el.text}</div>
-                    </Link>)}
+                        <Link to="/facility-terminology" className="bdExp__false-blocks-text" style={styleText}>{el.text}</Link>
+                    </div>)}
             </div>
             <div className="bdExp__text">
                 {arrTrue.length < 5 ? "없어서 이동약자들의 이용이 어렵습니다." : "모두의 캠퍼스를 위해서 꼭 필요합니다."}

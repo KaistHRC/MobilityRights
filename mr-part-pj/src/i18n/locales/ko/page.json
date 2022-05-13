@@ -1,0 +1,14 @@
+{
+    "lan":"Eng",
+    "buildingPage-name": "지금 이 건물",
+    "buildingPage-acc-1": "의",
+    "buildingPage-acc-2": "이동약자 접근성",
+    "buildingPage-reason-1": "왜?",
+    "buildingPage-reason-2": " 이유 보기",
+    "buildingPage-rating-1": "최악", 
+    "buildingPage-rating-2": "나쁨", 
+    "buildingPage-rating-3": "보통",
+    "buildingPage-rating-4": "좋음",
+    "buildingPage-rating-5": "최고",
+    "buildingPage-noInfo": "아직 정보가 없습니다."
+}

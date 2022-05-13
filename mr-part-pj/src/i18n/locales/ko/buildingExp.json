@@ -1,0 +1,10 @@
+{
+    "road": "건물 주변 보도 경사",
+    "road_braille": "건물 주변 점자블록",
+    "auto_door": "자동문", 
+    "slope": "경사로", 
+    "elevator": "엘리베이터", 
+    "braille_blocks": "건물 내 점자블록", 
+    "info_braille": "점자 안내", 
+    "toilet": "장애인 화장실"
+}

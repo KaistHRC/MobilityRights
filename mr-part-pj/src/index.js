@@ -6,6 +6,7 @@ import { Main, Building, BdList, FacilityExp } from './pages'
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './i18n'
 
 
 ReactDOM.render(

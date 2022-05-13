@@ -17,7 +17,7 @@ h2 {
 .bdList__campus-arrow {
     font-size: 2.2rem;
     height: 2.2rem;
-    
+    color: black;
 }
 
 .arrow-rotated {
@@ -37,6 +37,7 @@ h2 {
 .bdList__direction-arrow {
     font-size: 2.2rem;
     height: 2.2rem;
+    color: black;
 }
 
 .bdList__list {
