@@ -16,6 +16,8 @@ import { useParams } from "react-router-dom";
 import { IoChevronForward } from "react-icons/io5"
 import FormButton from "../components/formButton";
 
+import { useTranslation } from "react-i18next";
+
 function Building() {
     let navigate = useNavigate();
     const params = useParams()
@@ -26,6 +28,8 @@ function Building() {
 
     const buildingInfo = null;
     const res = useGoogle();
+
+    const { t } = useTranslation('ko-KR', {useSuspense: false});
 
     useEffect(() => {
         if (res != undefined){
@@ -64,6 +68,9 @@ function Building() {
                     </div> */}
                     <div className="buildingPage__name-acc">
                         지금 이 건물,<br/> <b>{bdInfo == undefined ? "... " : bdInfo.bd_name}</b>의 <br/>이동약자 접근성
+                    </div>
+                    <div>
+                        {t("test")}
                     </div>
                 </div>
                 <BdRating bdInfo={bdInfo} />

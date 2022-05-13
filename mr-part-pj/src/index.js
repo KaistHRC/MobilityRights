@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { Main, Building } from './pages'
 import reportWebVitals from './reportWebVitals';
+import './lang/i18n';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
