@@ -68,3 +68,27 @@ h3 {
 .list-hide {
     display: none;
 }
+
+.bdList__search {
+    margin: 24px;
+    border: 1px solid white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.bdList__search-input {
+    /* height: 100%;
+    width: 100%; */
+    padding: 8px;
+    font-size: 2.0rem;
+    border: transparent;
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+.bdList__search-icon {
+    font-size: 2.4rem;
+    padding: 8px;
+    color: white;
+}
