@@ -61,7 +61,7 @@ function InfoContent() {
                     <b>{t('info:text4-1')}</b>{t('info:text4-2')} <br />{t('info:text4-3')}
                 </div>
             </div>
-            <Link className="infoContent__link" to="/building-list"><span>건물 목록 보러가기</span><IoChevronForward size={"3.2rem"}/> </Link>
+            <Link className="infoContent__link" to="/building-list"><span>{t('info:bd-list-link')}</span><IoChevronForward size={"3.2rem"}/> </Link>
         </div>
     )
   }
