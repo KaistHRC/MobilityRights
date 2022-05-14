@@ -1,0 +1,22 @@
+{
+    "lan": "한국어",
+    "buildingPage-name-1": "Accessibility for",
+    "buildingPage-name-2": "this building,",
+    "buildingPage-acc-1": "",
+    "buildingPage-acc-2": "",
+    "buildingPage-reason-1": "",
+    "buildingPage-reason-2": " Find out WHY",
+    "buildingPage-rating-1": "VERY POOR", 
+    "buildingPage-rating-2": "POOR", 
+    "buildingPage-rating-3": "MODERATE",
+    "buildingPage-rating-4": "GOOD",
+    "buildingPage-rating-5": "GREAT",
+    "buildingPage-noInfo": "NO INFORMATION",
+    "buildingPage-exp-text-1": "This building has...",
+    "buildingPage-exp-text-2": "But doesn't have...",
+    "buildingPage-exp-text-3": "which makes it difficult for some people to access the building.",
+    "buildingPage-exp-text-4": "which are needed for accessibility.",
+    "formbutton-1":"",
+    "formbutton-2":"Fill accessibility info",
+    "formbutton-3":"and get a PRIZE!"
+}

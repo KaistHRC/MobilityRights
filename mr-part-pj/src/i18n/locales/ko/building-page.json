@@ -1,0 +1,22 @@
+{
+    "lan":"Eng",
+    "buildingPage-name-1": "",
+    "buildingPage-name-2": "지금 이 건물,",
+    "buildingPage-acc-1": "의",
+    "buildingPage-acc-2": "이동약자 접근성",
+    "buildingPage-reason-1": "왜?",
+    "buildingPage-reason-2": " 이유 보기",
+    "buildingPage-rating-1": "최악", 
+    "buildingPage-rating-2": "나쁨", 
+    "buildingPage-rating-3": "보통",
+    "buildingPage-rating-4": "좋음",
+    "buildingPage-rating-5": "최고",
+    "buildingPage-noInfo": "아직 정보가 없습니다.",
+    "buildingPage-exp-text-1": "이 건물에는",
+    "buildingPage-exp-text-2": "설치되어 있지만...",
+    "buildingPage-exp-text-3": "없어서 이동약자들의 이용이 어렵습니다.",
+    "buildingPage-exp-text-4": "모두의 캠퍼스를 위해서 꼭 필요합니다.",
+    "formbutton-1":"건물 정보",
+    "formbutton-2":"입력하고",
+    "formbutton-3":"상품 받기"
+}

@@ -10,14 +10,14 @@ import infoPic from "../img/info.png";
 import { useTranslation } from "react-i18next";
 
 function BdRating(props) {
-    const { t }  = useTranslation(['page'])
+    const { t }  = useTranslation(['bd'])
     // 여러 backend things using props.bdId
     const appRateText = [
-        t('page:buildingPage-rating-1'), 
-        t('page:buildingPage-rating-2'), 
-        t('page:buildingPage-rating-3'), 
-        t('page:buildingPage-rating-4'), 
-        t('page:buildingPage-rating-5'), ]
+        t('bd:buildingPage-rating-1'), 
+        t('bd:buildingPage-rating-2'), 
+        t('bd:buildingPage-rating-3'), 
+        t('bd:buildingPage-rating-4'), 
+        t('bd:buildingPage-rating-5'), ]
 
     /// ['VERY POOR', 'POOR', "MODERATE", "GOOD", "GREAT"]
     const info = props.bdInfo
@@ -42,7 +42,7 @@ function BdRating(props) {
         <div className="bdRating__">
             {info != undefined ? info.is_info ? <img src={rateImg[rate]} /> : <img src={infoPic} />  : null}
             <div className="bdRating__text">
-                {info != undefined ? info.is_info ? <b> {appRateText[rate]} </b> : t('page:buildingPage-noInfo') /*"No information"*/: null} 
+                {info != undefined ? info.is_info ? <b> {appRateText[rate]} </b> : t('bd:buildingPage-noInfo') /*"No information"*/: null} 
             </div>
         </div>
     )

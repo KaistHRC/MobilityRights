@@ -7,7 +7,7 @@ import "../nav-bar.css";
 import logo from "../img/logo.svg";
 
 function NavBar() {
-    const { t }  = useTranslation(['page'])
+    const { t }  = useTranslation(['bd'])
     const getLanguage = () => i18n.language || window.localStorage.i18nextLng
 
     const onChangeLang = () => {
@@ -30,7 +30,7 @@ function NavBar() {
         <div className="navBar__">
             <div className="navBar__logo"><Link to="/"><img src={logo}></img></Link></div>
             <div>
-                <button className="navBar__lng" onClick={onChangeLang}>{t('page:lan')}</button>
+                <button className="navBar__lng" onClick={onChangeLang}>{t('bd:lan')}</button>
                 
             </div>
         </div>

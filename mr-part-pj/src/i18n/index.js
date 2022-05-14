@@ -16,7 +16,7 @@ i18n
         en:en,
         ko:ko
     },
-    ns:['page', 'buildingExp'],
+    ns:['bd', 'buildingExp'],
     interpolation: {
       escapeValue: false
     }

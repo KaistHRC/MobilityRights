@@ -1,7 +1,8 @@
 
-import page from './page.json'
+import bd from './building-page.json'
 import buildingExp from './buildingExp.json'
+import info from './info.json'
 
 export default{
-    page, buildingExp
+    bd, buildingExp, info
 }

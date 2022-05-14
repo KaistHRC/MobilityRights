@@ -25,7 +25,7 @@ function BdExp(props) {
     const styleText = {
         fontSize: i18n.language === 'en' ? "2.2rem" : "2.7rem",
         padding: "10px",
-        maxWidth: "260px",
+        maxWidth: "230px",
     }
     useEffect(() => {
         if (info != undefined && info.is_info) {
@@ -58,7 +58,7 @@ function BdExp(props) {
         /// "which are needed for accessibility."
         <div className="bdExp__">
             <div className="bdExp__text">
-                이 건물에는 
+                {t('bd:buildingPage-exp-text-1')} 
             </div>
             <div className="bdExp__true">
                 {arrTrue.map((el, ind) => 
@@ -67,7 +67,7 @@ function BdExp(props) {
                     </div>)}
             </div>
             <div className="bdExp__text">
-                설치되어 있지만...
+                {t('bd:buildingPage-exp-text-2')}
             </div>
             <div className="bdExp__false">
                 {arrFalse.map((el, ind) => 
@@ -77,7 +77,7 @@ function BdExp(props) {
                     </div>)}
             </div>
             <div className="bdExp__text">
-                {arrTrue.length < 5 ? "없어서 이동약자들의 이용이 어렵습니다." : "모두의 캠퍼스를 위해서 꼭 필요합니다."}
+                {arrTrue.length < 5 ? t('bd:buildingPage-exp-text-3') : t('bd:buildingPage-exp-text-4')}
             </div>
             <Link className="bdExp__term" to="/facility-terminology"><span>편의시설 용어 설명</span><IoChevronForward size={"2.4rem"}/> </Link>
         </div>
