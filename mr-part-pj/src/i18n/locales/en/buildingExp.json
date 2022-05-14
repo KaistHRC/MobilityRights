@@ -6,5 +6,6 @@
     "elevator": "Elevators", 
     "braille_blocks": "Tactile pavements in the building", 
     "info_braille": "Braille Maps", 
-    "toilet": "Wheelchair accessible bathrooms"
+    "toilet": "Wheelchair accessible bathrooms",
+    "tactile": "Tactile pavements"
 }

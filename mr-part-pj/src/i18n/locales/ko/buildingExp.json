@@ -6,5 +6,6 @@
     "elevator": "엘리베이터", 
     "braille_blocks": "건물 내 점자블록", 
     "info_braille": "점자 안내", 
-    "toilet": "장애인 화장실"
+    "toilet": "장애인 화장실",
+    "tactile": "점자 블록"
 }
