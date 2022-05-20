@@ -18,5 +18,12 @@
     "buildingPage-exp-text-4": "which are needed for accessibility.",
     "formbutton-1":"",
     "formbutton-2":"Fill accessibility info",
-    "formbutton-3":"and get a PRIZE!"
+    "formbutton-3":"and get a PRIZE!",
+    "list": "Campus",
+    "placeholder": "Enter building name",
+    "main": "Main Campus",
+    "MJ-campus": "Munji Campus",
+    "east": "East",
+    "west": "West",
+    "north": "North"
 }

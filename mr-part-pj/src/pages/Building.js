@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 
@@ -20,7 +20,7 @@ import FormButton from "../components/formButton";
 
 function Building() {
     let navigate = useNavigate();
-    const { t }  = useTranslation(['bd'])
+    const { t }  = useTranslation(['bd', 'bdList'])
 
     const params = useParams()
     const buildingId = params.buildingId
@@ -55,9 +55,9 @@ function Building() {
             <NavBar />
             <div className="buildingPage__">
                 <div className="buildingPage__name">
-                    <span className="buildingPage__name-num">
-                        {bdInfo == undefined ? "..." : bdInfo.bd_id}
-                    </span>
+                    <Link to="/building-list" className="buildingPage__name-num">
+                        {bdInfo == undefined ? "..." : bdInfo.bd_id[0] === "M" ? t('bdList:'+ bdInfo.bd_id): bdInfo.bd_id}
+                    </Link>
                     {/* <div className="buildingPage__name-bdname">
                         
                     </div> */}
@@ -65,7 +65,7 @@ function Building() {
                         {/* 지금 이 건물,<br/> <b>{bdInfo == undefined ? "... " : bdInfo.bd_name}</b>의 <br/>이동약자 접근성 */}
                         {t('bd:buildingPage-name-1')}{i18n.language === "en"? <br/> : null}
                         {t('bd:buildingPage-name-2')}<br/>
-                        <b>{bdInfo == undefined ? "... " : bdInfo.bd_name}</b> 
+                        <b>{bdInfo == undefined ? "... " : t("bdList:" + bdInfo.bd_id)}</b> 
                         {t('bd:buildingPage-acc-1')}<br />{t('bd:buildingPage-acc-2')}
                     </div>
                 </div>

@@ -87,3 +87,8 @@ input::-webkit-search-results-decoration{
 input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
+
+.react-transform-wrapper {
+  max-width: 100vw;
+  max-height: 320px;
+}

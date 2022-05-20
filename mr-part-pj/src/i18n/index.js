@@ -16,7 +16,7 @@ i18n
         en:en,
         ko:ko
     },
-    ns:['bd', 'buildingExp'],
+    ns:['bd', 'buildingExp', "bdList", "info"],
     interpolation: {
       escapeValue: false
     }

@@ -18,5 +18,12 @@
     "buildingPage-exp-text-4": "모두의 캠퍼스를 위해서 꼭 필요합니다.",
     "formbutton-1":"건물 정보",
     "formbutton-2":"입력하고",
-    "formbutton-3":"상품 받기"
+    "formbutton-3":"상품 받기",
+    "list": "건물 목록",
+    "placeholder": "건물 이름을 입력하세요",
+    "main": "본교",
+    "MJ-campus": "문지캠퍼스",
+    "east": "동측",
+    "west": "서측",
+    "north": "북측"
 }

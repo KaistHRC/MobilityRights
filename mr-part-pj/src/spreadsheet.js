@@ -24,7 +24,7 @@ const useGoogle = () => {
               spreadsheetId: '12hBnR4G-ACW9QnUVjveiYPbZcN0OnZdnf2-wlKuvAnw',  // TODO: Update placeholder value.
       
               // The A1 notation of the values to retrieve.
-              range: "'Sheet 3'!A1:K98", 
+              range: "'data_DO_NOT_EDIT'!A1:L98", 
       
             //   valueRenderOption: '',  // TODO: Update placeholder value.
       
@@ -88,6 +88,7 @@ const useGoogle = () => {
             document.body.removeChild(script);
         };
       } else {
+        // localStorage.removeItem('db')
         setRes(JSON.parse(localStorage.getItem('db')))
       }
     }, []);
