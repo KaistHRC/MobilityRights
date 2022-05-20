@@ -12,6 +12,7 @@ import "../bd-exp.css";
 function BdExp(props) {
     const { t }  = useTranslation(['buildingExp'])
     const info = props.bdInfo
+    const vis = props.vis
     const keys = ["road", "road_braille", "auto_door", "slope", "elevator", "braille_blocks", "info_braille", "toilet"]
 
     const lisTexts = keys.map(el => t('buildingExp:' + el))
@@ -56,7 +57,7 @@ function BdExp(props) {
         /// "which makes it difficult for some people to access the building."
         // OR
         /// "which are needed for accessibility."
-        <div className="bdExp__">
+        <div className="bdExp__" style={vis}>
             <div className="bdExp__text">
                 {t('bd:buildingPage-exp-text-1')} 
             </div>

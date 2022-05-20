@@ -1,6 +1,8 @@
 .facilityExp__name {
     padding-bottom: 10px;
     border-bottom: 1px solid black;
+    align-items:baseline;
+    flex-wrap: wrap
 }
 
 

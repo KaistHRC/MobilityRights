@@ -25,10 +25,8 @@ function Building() {
     const params = useParams()
     const buildingId = params.buildingId
     const [expOn, setExpOn] = useState(false);
-    // var bdInfo = {};
     const [bdInfo, setBdInfo] = useState();
 
-    const buildingInfo = null;
     const res = useGoogle();
 
     useEffect(() => {
@@ -41,13 +39,10 @@ function Building() {
             }
         }
         if (expOn) {
-            window.scrollBy({top: document.querySelector(".bdExp__").offsetTop, behavior: "smooth"})
+            window.scrollBy({top: document.querySelector(".bdExp__").offsetTop - document.documentElement.scrollTop, behavior: "smooth"})
+
         }
     }, [expOn, res])
-
-    useEffect(() => {
-        console.log(bdInfo)
-    }, [bdInfo])
 
     function scrollExp() {
         setExpOn(!expOn)
@@ -80,7 +75,9 @@ function Building() {
                         <button className="buildingPage__reason-toggle" onClick={scrollExp}> 
                             <b>{t('bd:buildingPage-reason-1')}</b> {t('bd:buildingPage-reason-2')} <IoChevronForward size={"2.2rem"}/> 
                         </button> : <><FormButton /> <InfoContent /><FormButton /></>}
-                    {expOn ? <BdExp bdInfo={bdInfo} /> : null}
+                    
+                    {expOn ? <BdExp bdInfo={bdInfo} vis={{}} /> : <BdExp bdInfo={bdInfo} vis={{display:"none"}} />}
+                    
                 </div>
             </div>
             <Footer />
