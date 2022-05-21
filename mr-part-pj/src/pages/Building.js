@@ -56,7 +56,7 @@ function Building() {
             <div className="buildingPage__">
                 <div className="buildingPage__name">
                     <Link to="/building-list" className="buildingPage__name-num">
-                        {bdInfo == undefined ? "..." : bdInfo.bd_id[0] === "M" ? t('bdList:'+ bdInfo.bd_id): bdInfo.bd_id}
+                        {bdInfo == undefined ? "..." : bdInfo.bd_id[0] === "M" ? t('bd:MJ-campus'): bdInfo.bd_id}
                     </Link>
                     {/* <div className="buildingPage__name-bdname">
                         
