@@ -3,3 +3,4 @@ export { default as Main } from './Main.js';
 export { default as Building} from './Building.js';
 export { default as BdList} from './BdList.js';
 export { default as FacilityExp} from './FacilityExp.js';
+export { default as Project} from './Project.js';

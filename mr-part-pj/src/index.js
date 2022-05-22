@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import ScrollToTop from './components/ScrollToTop.js'
-import { Main, Building, BdList, FacilityExp } from './pages'
+import { Main, Building, BdList, FacilityExp, Project } from './pages'
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -16,6 +16,7 @@ ReactDOM.render(
         <Route path="/" element={<Main />} />
         <Route path="/building-list" element={<BdList />} />
         <Route path="/facility-terminology" element={<FacilityExp />}/>
+        <Route path="/project" element={<Project />}/>
         {/* <Route path="/:buildingId" element={<Main />}/> */}
         <Route path="/:buildingId" element={<Building />}/>
         <Route

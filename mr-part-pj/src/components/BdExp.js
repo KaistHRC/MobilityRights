@@ -68,7 +68,7 @@ function BdExp(props) {
                     </div>)}
             </div>
             <div className="bdExp__text">
-                {t('bd:buildingPage-exp-text-2')}
+                {arrTrue.length === 8 ? t('bd:buildingPage-exp-text-5') : t('bd:buildingPage-exp-text-2')}
             </div>
             <div className="bdExp__false">
                 {arrFalse.map((el, ind) => 
@@ -78,7 +78,7 @@ function BdExp(props) {
                     </div>)}
             </div>
             <div className="bdExp__text">
-                {arrTrue.length < 5 ? t('bd:buildingPage-exp-text-3') : t('bd:buildingPage-exp-text-4')}
+                {arrTrue.length < 5 ? t('bd:buildingPage-exp-text-3') : arrTrue.length == 8? null: t('bd:buildingPage-exp-text-4')}
             </div>
             <Link className="bdExp__term" to="/facility-terminology"><span>편의시설 용어 설명</span><IoChevronForward size={"2.4rem"}/> </Link>
         </div>

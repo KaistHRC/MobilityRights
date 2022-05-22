@@ -1,0 +1,28 @@
+.project-exp {
+    padding: 0px 16px 32px 32px;
+    text-align: left;
+    font-size: 1.6rem;
+    display: block;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+.project__container {
+    display: flex;
+    padding-left: 32px;
+    font-size: 1.8rem;
+    margin: 0px 0px 50px 0px;
+}
+
+.project__container-inner {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.project__container-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}

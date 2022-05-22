@@ -61,7 +61,9 @@ function InfoContent() {
                     <b>{t('info:text4-1')}</b>{t('info:text4-2')} <br />{t('info:text4-3')}
                 </div>
             </div>
-            <Link className="infoContent__link" to="/building-list"><span>{t('info:bd-list-link')}</span><IoChevronForward size={"3.2rem"}/> </Link>
+            <Link className="infoContent__link" to="/building-list"><span><Emoji symbol='🏢' ></Emoji>{t('info:bd-list-link')}</span><IoChevronForward size={"3.2rem"}/> </Link>
+            {i18n.language === "ko" ? <Link className="infoContent__link" to="/project"><span><Emoji symbol='✨' ></Emoji><b>프로젝트 기획 의도</b> 알아보기</span><IoChevronForward size={"3.2rem"}/> </Link> : null}
+            
         </div>
     )
   }
