@@ -63,7 +63,7 @@ function Building() {
                     </div> */}
                     <div className="buildingPage__name-acc">
                         {/* 지금 이 건물,<br/> <b>{bdInfo == undefined ? "... " : bdInfo.bd_name}</b>의 <br/>이동약자 접근성 */}
-                        {t('bd:buildingPage-name-1')}{i18n.language === "en"? <br/> : null}
+                        {t('bd:buildingPage-name-1')}{i18n.language || window.localStorage.i18nextLng === "en"? <br/> : null}
                         {t('bd:buildingPage-name-2')}<br/>
                         <b>{bdInfo == undefined ? "... " : t("bdList:" + bdInfo.bd_id)}</b> 
                         {t('bd:buildingPage-acc-1')}<br />{t('bd:buildingPage-acc-2')}

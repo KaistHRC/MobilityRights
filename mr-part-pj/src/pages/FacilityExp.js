@@ -21,17 +21,17 @@ function FacilityExp() {
             <div className="facilityExp__">
                 <h1 className="facilityExp__title">이동약자 편의시설</h1>
                 <h2 className="facilityExp__name"><Emoji symbol="🛣"/>{t('buildingExp:road')}</h2>
-                <text className="facilityExp__name-exp">이동약자, 특히 휠체어 사용자, 유모차 등의 원활한 통행을 확보하기 위해 횡단보도 진입부, 교통섬, 안전지대 등에 설치하여 보도와 차도의 단차를 줄이는 방법</text>
+                <article className="facilityExp__name-exp">이동약자, 특히 휠체어 사용자, 유모차 등의 원활한 통행을 확보하기 위해 횡단보도 진입부, 교통섬, 안전지대 등에 설치하여 보도와 차도의 단차를 줄이는 방법</article>
                 <div className="facilityExp__container">
                     <img src={slope} className="facilityExp__container-img"></img>
                 </div>
                 <h2 className="facilityExp__name"><Emoji symbol="↗️"/>&nbsp;{t('buildingExp:slope')}</h2>
-                <text className="facilityExp__name-exp">계단이 설치된 건물 진입로에 계단을 이용하기 어려운 이동약자의 원활한 통행을 돕기 위해서 설치하는, 완만한 기울기를 가진 시설물</text>
+                <article className="facilityExp__name-exp">계단이 설치된 건물 진입로에 계단을 이용하기 어려운 이동약자의 원활한 통행을 돕기 위해서 설치하는, 완만한 기울기를 가진 시설물</article>
                 <div className="facilityExp__container">
                     <img src={ramp} className="facilityExp__container-img"></img>
                 </div>
                 <h2 className="facilityExp__name"><Emoji symbol="🦯"/>&nbsp;{t('buildingExp:tactile')}</h2>
-                <text className="facilityExp__name-exp">시각장애인이 보행 상태에서 주로 발바닥이나 지팡이의 촉감으로 그 존재와 대략적인 형상을 확인할 수 있는 시설로 정해진 정보를 판독할 수 있도록 그 표면에 돌기를 붙인 것</text>
+                <article className="facilityExp__name-exp">시각장애인이 보행 상태에서 주로 발바닥이나 지팡이의 촉감으로 그 존재와 대략적인 형상을 확인할 수 있는 시설로 정해진 정보를 판독할 수 있도록 그 표면에 돌기를 붙인 것</article>
                 <div className="facilityExp__container">
                     <div className="facilityExp__container-inner">
                         <img src={blockOutside} className="facilityExp__container-img"></img>
@@ -43,7 +43,7 @@ function FacilityExp() {
                     </div>
                 </div>
                 <h2 className="facilityExp__name"><Emoji symbol="🧭"/>&nbsp;{t('buildingExp:info_braille')}</h2>
-                <text className="facilityExp__name-exp">시각장애인이 시설의 공간 현황 및 이동 동선을 파악할 수 있도록 시설의 주요 동선을 돌출된 선과 점자로 표현한 안내판</text>
+                <article className="facilityExp__name-exp">시각장애인이 시설의 공간 현황 및 이동 동선을 파악할 수 있도록 시설의 주요 동선을 돌출된 선과 점자로 표현한 안내판</article>
                 <div className="facilityExp__container">
                     <img src={info} className="facilityExp__container-img"></img>
                 </div>

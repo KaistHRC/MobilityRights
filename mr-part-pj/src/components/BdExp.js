@@ -24,7 +24,7 @@ function BdExp(props) {
     const [arrTrue, setArrTrue] = useState([]);
     const [arrFalse, setArrFalse] = useState([]);
     const styleText = {
-        fontSize: i18n.language === 'en' ? "2.2rem" : "2.7rem",
+        fontSize: i18n.language === 'en' || window.localStorage.i18nextLng === 'en' ? "2.2rem" : "2.7rem",
         padding: "10px",
         maxWidth: "230px",
     }

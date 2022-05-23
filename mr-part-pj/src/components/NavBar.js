@@ -11,16 +11,7 @@ function NavBar() {
     const getLanguage = () => i18n.language || window.localStorage.i18nextLng
 
     const onChangeLang = () => {
-        if (getLanguage() === "ko") {
-            if (window.confirm("Do you want to see the page in English?")) {
-                window.localStorage.removeItem("i18nextLng")
-                window.localStorage.removeItem("i18n")
-                window.localStorage.removeItem("i18nextlng")
-                window.localStorage.setItem("i18nextLng", 'en')
-                i18n.changeLanguage('en')
-            }
-        }
-        else {
+        if (getLanguage() === "en") {
             if (window.confirm("한국어로 보시겠습니까?")){
                 window.localStorage.removeItem("i18nextLng")
                 window.localStorage.removeItem("i18n")
@@ -28,7 +19,15 @@ function NavBar() {
                 window.localStorage.setItem("i18nextLng", 'ko')
                 i18n.changeLanguage('ko')
             }
-           
+        }
+        else {
+            if (window.confirm("Do you want to see the page in English?")) {
+                window.localStorage.removeItem("i18nextLng")
+                window.localStorage.removeItem("i18n")
+                window.localStorage.removeItem("i18nextlng")
+                window.localStorage.setItem("i18nextLng", 'en')
+                i18n.changeLanguage('en')
+            }
         }   
     }
 
