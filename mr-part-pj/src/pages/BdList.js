@@ -82,7 +82,7 @@ function BdList() {
 
     function searchSpace(e) {
         setBdList(rawBdList.filter(el => {
-            if (i18n.language || window.localStorage.i18nextLng === "en" && el.bd_eng_name) return el.bd_eng_name.toLowerCase().includes(e.target.value.toLowerCase())
+            if ((i18n.language === "en" || window.localStorage.i18nextLng === "en" ) && el.bd_eng_name) return el.bd_eng_name.toLowerCase().includes(e.target.value.toLowerCase())
             else return el.bd_name.includes(e.target.value)
         }))
         var els = document.getElementsByClassName('bdList__list')

@@ -10,7 +10,7 @@ import i18n from "i18next";
 import "../bd-exp.css";
 
 function BdExp(props) {
-    const { t }  = useTranslation(['buildingExp'])
+    const { t }  = useTranslation(['buildingExp', 'facGlsry'])
     const info = props.bdInfo
     const vis = props.vis
     const keys = ["road", "road_braille", "auto_door", "slope", "elevator", "braille_blocks", "info_braille", "toilet"]
@@ -80,7 +80,7 @@ function BdExp(props) {
             <div className="bdExp__text">
                 {arrTrue.length < 5 ? t('bd:buildingPage-exp-text-3') : arrTrue.length == 8? null: t('bd:buildingPage-exp-text-4')}
             </div>
-            <Link className="bdExp__term" to="/facility-terminology"><span>편의시설 용어 설명</span><IoChevronForward size={"2.4rem"}/> </Link>
+            <Link className="bdExp__term" to="/facility-terminology"><span>{t('facGlsry:button')}</span><IoChevronForward size={"2.4rem"}/> </Link>
         </div>
     )
 }

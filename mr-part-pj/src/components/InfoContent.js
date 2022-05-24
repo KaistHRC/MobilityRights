@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import "../info-content.css"
 
 function InfoContent() {
-    const {t} = useTranslation(['info'])
+    const {t} = useTranslation(['info', 'pj'])
     const textStyle1 = i18n.language === 'en' || window.localStorage.i18nextLng === 'en'? {fontSize:"2.4rem"} : {}
     const textStyle3 = i18n.language === 'en' || window.localStorage.i18nextLng === 'en'? {fontSize:"1.8rem", marginLeft:"16px", lineHeight:"2.4rem"} : {marginLeft:"16px"}
     return (
@@ -62,7 +62,7 @@ function InfoContent() {
                 </div>
             </div>
             <Link className="infoContent__link" to="/building-list"><span><Emoji symbol='🏢' ></Emoji>{t('info:bd-list-link')}</span><IoChevronForward size={"3.2rem"}/> </Link>
-            {i18n.language === "en" || window.localStorage.i18nextLng === "en" ? null :  <Link className="infoContent__link" to="/project"><span><Emoji symbol='🧐' ></Emoji><b>뭐하는 사이트일까?</b> 알아보기</span><IoChevronForward size={"3.2rem"}/> </Link>} 
+            <Link className="infoContent__link" to="/project"><span><Emoji symbol='🧐' ></Emoji><b>{t('pj:button-1')}</b> {t('pj:button-2')}</span><IoChevronForward size={"3.2rem"}/> </Link>
             
         </div>
     )

@@ -1,11 +1,11 @@
 {
     "road": "Pavement ramps around the building",
-    "road_braille": "Tactile pavements around the building",
+    "road_braille": "Tactile paving around the building",
     "auto_door": "Automatic doors", 
     "slope": "Wheelchair ramps", 
     "elevator": "Elevators", 
-    "braille_blocks": "Tactile pavements in the building", 
-    "info_braille": "Braille Maps", 
+    "braille_blocks": "Tactile paving in the building", 
+    "info_braille": "Tactile Maps", 
     "toilet": "Wheelchair accessible bathrooms",
-    "tactile": "Tactile pavements"
+    "tactile": "Tactile paving"
 }
