@@ -11,7 +11,7 @@ function Main() {
         <div className="ui-container">
             <div className="mainPage__">
                 <NavBar />
-                <InfoContent />
+                <InfoContent isMain={true} />
             </div>
             <Footer />
         </div>

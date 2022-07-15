@@ -32,13 +32,13 @@ function NavBar() {
     }
 
     return(
-        <div className="navBar__">
+        <nav className="navBar__">
             <div className="navBar__logo"><Link to="/"><img src={logo}></img></Link></div>
             <div>
                 <button className="navBar__lng" onClick={onChangeLang}>{t('bd:lan')}</button>
                 
             </div>
-        </div>
+        </nav>
     )
 }
 export default NavBar;

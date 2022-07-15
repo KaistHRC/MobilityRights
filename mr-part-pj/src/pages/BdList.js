@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Emoji from 'a11y-react-emoji'
 import {Link} from "react-router-dom";
 import {AiFillCaretRight, AiOutlineSearch} from "react-icons/ai"
 import { useTranslation } from "react-i18next";
@@ -63,6 +64,7 @@ function BdList() {
                         <Link className="bdList__list-el" to={link}>
                             <div className="bdList__list-el-num">{el.bd_id}</div>
                             <div className="bdList__list-el-name">{t("bdList:" + el.bd_id)}</div>
+                            <div className="bdList__list-el-checked">{el.is_info ? <Emoji symbol='✅' ></Emoji> : null}</div>
                         </Link>
                     </li>)
             })
@@ -73,6 +75,7 @@ function BdList() {
                     <li key={ind}>
                         <Link className="bdList__list-el" to={link}>
                             <div className="bdList__list-el-name">{t("bdList:" + el.bd_id)}</div>
+                            <div className="bdList__list-el-checked">{el.is_info ? <Emoji symbol='✅' ></Emoji> : null}</div>
                         </Link>
                     </li>)
             })

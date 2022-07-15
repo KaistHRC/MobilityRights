@@ -45,11 +45,6 @@ function Project() {
                 </article>
                 <FormButton style={{marginBottom: "50px"}}/>
 
-                <h2 className="facilityExp__name">{t('pj:h-4')}</h2>
-                <article className="project-exp">
-                    {t('pj:text-6-1')} <b>{t('pj:text-6-2')}</b> {t('pj:text-6-3')} <b>{t('pj:text-6-4')}</b> {t('pj:text-6-5')}
-                </article>
-
                 <article className="project-exp" style={{fontSize: "1.8rem", lineHeight: "2.8rem", color: "white"}}>
                     {t('pj:text-7')}
                 </article>

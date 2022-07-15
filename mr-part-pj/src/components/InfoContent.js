@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 import "../info-content.css"
 
-function InfoContent() {
+function InfoContent(props) {
     const {t} = useTranslation(['info', 'pj'])
     const textStyle1 = i18n.language === 'en' || window.localStorage.i18nextLng === 'en'? {fontSize:"2.4rem"} : {}
     const textStyle3 = i18n.language === 'en' || window.localStorage.i18nextLng === 'en'? {fontSize:"1.8rem", marginLeft:"16px", lineHeight:"2.4rem"} : {marginLeft:"16px"}
@@ -61,6 +61,13 @@ function InfoContent() {
                     <b>{t('info:text4-1')}</b>{t('info:text4-2')} <br />{t('info:text4-3')}
                 </div>
             </div>
+            {props.isMain ? 
+                    <div className='infoContent__3' style={{paddingBottom: "24px"}}>
+                    <div className='infoContent__2-text'>
+                        <b>참여하는 방법:</b> <br/> 건물 목록에서 아직 정보가 없는 건물을 찾아, 조사 후 구글 폼에 제출한다!
+                    </div> 
+                    </div>
+                : null}
             <Link className="infoContent__link" to="/building-list"><span><Emoji symbol='🏢' ></Emoji>{t('info:bd-list-link')}</span><IoChevronForward size={"3.2rem"}/> </Link>
             <Link className="infoContent__link" to="/project"><span><Emoji symbol='🧐' ></Emoji><b>{t('pj:button-1')}</b> {t('pj:button-2')}</span><IoChevronForward size={"3.2rem"}/> </Link>
             

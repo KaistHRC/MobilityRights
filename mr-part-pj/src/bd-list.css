@@ -66,6 +66,10 @@ h3 {
     flex-grow: 1;
 }
 
+.bdList__list-el-checked {
+    padding-right: 12px;
+}
+
 .list-hide {
     display: none;
 }
