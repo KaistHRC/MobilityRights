@@ -1,84 +1,58 @@
-# Getting Started with Create React App
+# KAIST campus mobility rights
+
+
+## 📝 Overview of `mr-part-pj` project
+
+🔗 [Published Link](https://kaist-hrc-mobility-rights.web.app/)
+
+**🥳 2022 KAIST Human Rights Committee May event**
+
+For the event of human rights committee, I designed and developed the mobile web app that offers information of the current status of mobility facilities for impaired people in KAIST Campus. 
+
+The design aimed to be intuitive to get the information of the building, and lead users to be interested in mobility rights.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- *React Router, Google Sheet API v3*
 
-## Before Start...
-1. Install **VS code** as code editor
-1. Download and install **Node.js** from https://nodejs.org/ko/ (LTS Ver.)
-1. Clone this repository locally
+---
+## 🙋‍♀️ Contributor
+- Hye Soo Park
+    - Design, Implementation
+- Yeun Shin
+    - Translation into English
+- HRC members
+    - Collecting accessibility data of campus buildings
+---
+## 🧑‍💻 Development Process
+- 2022.01 - 05
+    - **Data collection**
+- 2022.05.01 - 05.10
+    - **Initiation, components, pages**
+    - **Connecting with Google Sheet file**
+- 2022.05.11 - 05.19
+    - **Translation, Detailed debugging**
+- 2022.05.20 - 05.25 
+    - **More pages for usability, deployment**
+- 2022.05.26
+    - **May Event**
 
-## Available Scripts
+---
+## 💬 How it works
+Google Sheets file that only committee members can access is linked as the database, so the maintenance and update is simple.
 
-In the project directory, you can run:
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/020fc349-c3cd-4274-aa3d-f03c8b81bb56/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220905%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220905T082526Z&X-Amz-Expires=86400&X-Amz-Signature=79bf5ccea9813bec1f546817fc3ad185096141b5c1e9a10e2be108b9cdbb3bbd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" width=200px/>
 
-```
-cd mr-part-pj
-npm install
-npm start
-```
+Posters similar as above have been distributed each building in KAIST Campus. If the user scan the QR code, they can directly access in the building page (3rd screen capture in heroshot) and **get the information of building accessibility for impaired person.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes and save it.\
-You may also see any lint errors in the console.\
-
-Developing...
+If there is no data collected for that building, the page offers google form link for report. This is participatory project with KAIST students, so it is designed to encourage participation.
 
 ---
 
+## 🔍 Learn More
 
-### `npm test`
+If you are interested in this project, please visit the [official facebook page](https://www.facebook.com/kaisthumanrightscommittee). Further information will be uploaded
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🗓 Future Plan
+- Developing data visualization page for mobility rights and vegeterian.
