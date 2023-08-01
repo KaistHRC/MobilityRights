@@ -5,6 +5,8 @@ html {
 :root{
     --maincolor : #ffa435;
     font-size: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -57,10 +59,20 @@ a {
   color: black;
 }
 
+
 .ui-container{
   height: auto;
   min-height: 100%;
   padding-bottom: 85px;
+}
+
+
+@media (min-width: 428px) {
+  .ui-container {
+    border-radius: 24px;
+    border: rgba(255, 255, 255, 0.5) 6px solid;
+    margin: 20px;
+  }
 }
 
 ul {
@@ -89,6 +101,6 @@ input::placeholder {
 }
 
 .react-transform-wrapper {
-  max-width: 100vw;
+  max-width: min(100vw, 428px);
   max-height: 320px;
 }

@@ -64,7 +64,7 @@ function InfoContent(props) {
             {props.isMain ? 
                     <div className='infoContent__3' style={{paddingBottom: "24px"}}>
                     <div className='infoContent__2-text'>
-                        <b>참여하는 방법:</b> <br/> 건물 목록에서 아직 정보가 없는 건물을 찾아, 조사 후 구글 폼에 제출한다!
+                        <b>{t('info:text5-1')}</b> <br/>{t('info:text5-2')}
                     </div> 
                     </div>
                 : null}
